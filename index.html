@@ -113,8 +113,8 @@ _options:
 	{% endfor %}
 </div>
 
-<h3 class="editable">Get your tickets</h3>
-{{ site.eventbrite_embed }}
+#<h3 class="editable">Get your tickets</h3>
+#{{ site.eventbrite_embed }}
 
 <h3 class="editable">Tell your friends</h3>
 <div class="sharing">
@@ -126,16 +126,16 @@ _options:
 	<a class="email" href="mailto:?subject=I'm going to this event&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include icons/social-icon.html icon="Email" %}</a>
 </div>
 
-<h3 class="editable">Location</h3>
-<div class="map" id="gmap_canvas"></div>
-<address><a href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
+#<h3 class="editable">Location</h3>
+#<div class="map" id="gmap_canvas"></div>
+#<address><a href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a></address>
 
-<h3 class="editable">Photos from 2015</h3>
-<div class="grid">
-	{% for photo in page.photos %}
-		<div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
-	{% endfor %}
-</div>
+#<h3 class="editable">Photos from 2015</h3>
+#<div class="grid">
+#	{% for photo in page.photos %}
+#		<div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
+#	{% endfor %}
+#</div>
 
 <h3 class="editable">Contact</h3>
 <p class="editable">Send us a message with any questions about sponsoring the event, tickets or anything else.</p>
