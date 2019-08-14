@@ -1,16 +1,16 @@
 ---
-title: Malt Festival
-start_datetime: 2016-11-10 9:00:00
-end_datetime: 2016-11-10 18:00:00
-timezone: America/Los_Angeles
-description: A fun filled day with friends and beer.
+title: Dusty Jerker Gravel
+start_datetime: 2020-05-02 9:00:00
+end_datetime: 2020-05-02 14:00:00
+timezone: America/Chicago
+description: A fun bit challenging Gravel Event in East-Central Illinois
 background_image: /uploads/2015/12.jpeg
 map:
-  address: 1 Market Street, San Francisco
+  address: 100 Main St, Hoopeston, IL
   zoom: 16
   latitude: 37.7938462
   longitude: -122.3970253
-featured_brews:
+sponsors:
   - label_image: /uploads/beers/label-1.png
     title: Count Chocula
     link: #
@@ -101,9 +101,9 @@ _options:
 </p>
 <p class="editable">Malt is an annual festival celebrating the finest craft beer in San Francisco. This year we have over 50 craft beers on tap, food trucks, live music and entertainment. Tickets are available right here for $45. Valid government issued ID required on entry.</p>
 
-<h3 class="editable">Featured brews</h3>
+<h3 class="editable">Sponsors</h3>
 <div class="gallery">
-	{% for feature in page.featured_brews %}
+	{% for feature in page.sponsors %}
 		<a href="{% include relative-src.html src=feature.link %}">
 			<div class="inner-wrapper">
 				<img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
