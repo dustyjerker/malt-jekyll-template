@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Malt Template
+title: Dusty Jerker Gravel
 url: "https://whispering-boat.cloudvent.net"
 baseurl:
 google_analytics_key:
@@ -11,7 +11,7 @@ timezone: Etc/UTC
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Event marketing template for Jekyll.
+description: A Central Illinois Gravel Event
 author:
   name:
   email:
