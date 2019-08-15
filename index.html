@@ -11,9 +11,9 @@ map:
   latitude: 37.7938462
   longitude: -122.3970253
 sponsors:
-  - label_image: /uploads/beers/label-1.png
-    title: Count Chocula
-    link: #
+  - label_image: /uploads/sponsors/wildcard.png
+    title: Wild Card Cycling 
+    link: http://www.wildcardcycling.org
   - label_image: /uploads/beers/label-2.png
     title: Professor Pope
     link: #
@@ -102,8 +102,6 @@ _options:
 <p class="editable">The Dusty Jerker is a 100 kilometer gravel event in East-Central Illinois.</p>
 
 <h3 class="editable">Sponsors</h3>
-<h4 class="editable">Coming Soon...</h4>
-<!--
 <div class="gallery">
 	{% for feature in page.sponsors %}
 		<a href="{% include relative-src.html src=feature.link %}">
@@ -114,7 +112,8 @@ _options:
 		</a>
 	{% endfor %}
 </div>
--->
+
+
 <h3 class="editable">Registration</h3>
 <h4 class="editable">Coming Soon...</h4>
 <h3 class="editable">The Route</h3>
@@ -128,7 +127,7 @@ _options:
 	{% assign share_url = page.url | absolute_url | cgi_escape %}
 	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include icons/social-icon.html icon="Facebook" %}</a>
 	<a class="instagram" href="https://instagram.com/dustyjerkergravel/">{% include icons/social-icon.html icon="Instagram" %}</a>
-	<a class="email" href="mailto:?subject=I'm going to this event&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include icons/social-icon.html icon="Email" %}</a>
+	<a class="email" href="mailto:?subject={ site.title }&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include icons/social-icon.html icon="Email" %}</a>
 </div>
 
 <!--
