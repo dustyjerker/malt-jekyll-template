@@ -1,0 +1,51 @@
+---
+title: Dusty Jerker Gravel
+start_datetime: 2020-05-02 9:00:00
+end_datetime: 2020-05-02 14:00:00
+timezone: America/Chicago
+description: A fun but challenging Gravel Event in East-Central Illinois
+background_image: /uploads/bg.jpg
+
+prizes:
+  - label_image: /uploads/prizes/wahoo-elemnt-roam.png
+    title: Wahoo ELEMNT ROAM
+    link: http://www.wahoofitness.com
+
+photos:
+  - image: /uploads/2015/1.jpeg
+    title: Malt Festival 1
+_options:
+  label_image:
+    width: 400
+    height: 400
+  image:
+    width: 600
+    height: 1200
+---
+
+
+<h3 class="editable">Prize Lottery</h3>
+<h4 class="editable">All starters (yep, even riders who DNF) will be entered into a prize lottery at the end of the event.<br>
+Exactly drawing time is yet to be determined, but you WILL need to be present to win. (But we'll hold your prize if you're still on course.)<br>
+</h4>
+
+
+<h3 class="editable">Prizes</h3>
+<div class="gallery">
+        {% for feature in page.prizes %}
+                <a href="{% include relative-src.html src=feature.link %}">
+                        <div class="inner-wrapper">
+                                <img src="{% include relative-src.html src=feature.label_image %}" alt="{{ feature.title }}">
+                        </div>
+                        <p class="caption">{{ feature.title }}</p>
+                </a>
+        {% endfor %}
+</div>
+
+<h3 class="editable">Tell your friends</h3>
+<div class="sharing">
+	{% assign share_url = page.url | absolute_url | cgi_escape %}
+	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include icons/social-icon.html icon="Facebook" %}</a>
+	<a class="instagram" href="https://instagram.com/dustyjerkergravel/">{% include icons/social-icon.html icon="Instagram" %}</a>
+	<a class="email" href="mailto:?subject={ site.title }&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include icons/social-icon.html icon="Email" %}</a>
+</div>
